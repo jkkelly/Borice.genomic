@@ -1,0 +1,21 @@
+# parameter settings
+
+InputDataType=1			# format of input data (1 or 2)
+FILEPREFIX=test.1		# main input file is [FILEPREFIX].genotypes.txt  
+rep=z1				# appended to front of outputs to distinguish this run of program (one chain)
+NoSubpops=5			# number of subpopulations (details in popfile)
+NoFamilies=115			# number of families
+popfile=Jack.subpop.txt		# file containing location of each maternal family
+FullOutput=0			# set to 1 to output posterior probs for all genotypes
+IHPriorModel=1			# 0=IH priors determined by t; 1= IH prior with uniform F
+ChainLength=1000		# run duration
+afstep=0.075			# allele frequency step window size
+tstep=0.075			# t step window size
+BetaGstep=0.0005		# step size for BetaGu (relevant only for InputDataType=2)
+AFboundary=0.005		# minimum for Minor Allele Frequency
+thinningfreq=2			# records taken from chain every thinningfreq steps
+burnin=100			# length of burn-in
+meanFst=0.05			# Prior for degree of subpopulation differentiation
+vfacFst=0.1			# variance factor for Fst Prior
+
+
